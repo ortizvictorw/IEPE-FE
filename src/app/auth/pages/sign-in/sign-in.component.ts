@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ACTIONS, ACTIONS_SUBMIT } from '../../shared/constants';
+import { OptionsForm } from '../../shared/interfaces/auth.interfases';
 
 @Component({
   selector: 'app-sign-in',
@@ -6,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in.component.sass']
 })
 export class SignInComponent implements OnInit {
+
+  options: OptionsForm = {
+    id: ACTIONS.signIn,
+    label: ACTIONS.signIn,
+    submitLabel: ACTIONS_SUBMIT.signIn,
+  };
 
   constructor() { }
 

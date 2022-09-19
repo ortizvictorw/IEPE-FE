@@ -1,3 +1,4 @@
+import { FormComponent } from './../../components/form/form.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,7 +8,8 @@ import { SignInComponent } from './sign-in.component';
 
 @NgModule({
   declarations: [
-    SignInComponent
+    SignInComponent,
+    FormComponent
   ],
   imports: [
     CommonModule,
